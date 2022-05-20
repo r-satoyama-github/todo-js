@@ -21,7 +21,9 @@ const addToInCompleateList = (title) => {
 
   // 未完了TODOのタイトル作成
   const titleElement = document.createElement("p");
+  document.querySelector("#title").value = "";
   titleElement.innerText = title;
+
   // 未完了タイトル要素をリストアイテムへ追加
   incompleateRow.appendChild(titleElement);
 
